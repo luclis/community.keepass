@@ -239,7 +239,7 @@ def main():
 
 def generate_password(length):
     import string
-    alphabet = string.ascii_letters + string.digits
+    alphabet = string.ascii_letters + string.digits + string.punctuation
     try:
         import secrets as random
     except ImportError:

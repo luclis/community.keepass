@@ -9,22 +9,6 @@
 # Make coding more python3-ish
 from __future__ import absolute_import, division, print_function
 
-__metaclass__ = type
-
-import traceback
-
-from ansible.module_utils.basic import AnsibleModule, missing_required_lib
-
-PYKEEPASS_IMP_ERR = None
-try:
-    from pykeepass import PyKeePass
-    import pykeepass.exceptions
-except ImportError:
-    PYKEEPASS_IMP_ERR = traceback.format_exc()
-    pykeepass_found = False
-else:
-    pykeepass_found = True
-
 ANSIBLE_METADATA = {
     'metadata_version': '1.1',
     'status': ['preview'],
@@ -175,6 +159,22 @@ password:
     type: str
     returned: always
 '''
+
+__metaclass__ = type
+
+import traceback
+
+from ansible.module_utils.basic import AnsibleModule, missing_required_lib
+
+PYKEEPASS_IMP_ERR = None
+try:
+    from pykeepass import PyKeePass
+    import pykeepass.exceptions
+except ImportError:
+    PYKEEPASS_IMP_ERR = traceback.format_exc()
+    pykeepass_found = False
+else:
+    pykeepass_found = True
 
 
 def main():

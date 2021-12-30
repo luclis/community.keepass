@@ -245,28 +245,28 @@ def generate_password(length):
     except ImportError:
         import random
 
-    password = ''.join(random.choice(alphabet) for _ in range(length))
+    password = ''.join(random.choice(alphabet) for a in range(length))
     return password
 
 
 def set_password(kp, hostname, group, username, purpose, password, notes, icon):
     if hostname:
-        group_ =  get_group(kp, hostname, group)
+        kpgroup = get_group(kp, hostname, group)
         url = ""
         tags = ""
-        kp.add_entry(group_, hostname + ' - ' + purpose,  username, password,  url, notes, tags, icon)
+        kp.add_entry(kpgroup, hostname + ' - ' + purpose, username, password, url, notes, tags, icon)
     else:
-        group_ =  get_group(kp, hostname, group)
+        kpgroup = get_group(kp, hostname, group)
         url = ""
         tags = ""
-        kp.add_entry(group_, purpose, username, password, url, notes, tags, icon)
+        kp.add_entry(kpgroup, purpose, username, password, url, notes, tags, icon)
 
     kp.save()
 
-def get_group(kp, hostname, group): 
-    group_ = kp.find_groups(name=group, first=True)
-    return group_
 
+def get_group(kp, hostname, group):
+    kpgroup = kp.find_groups(name=group, first=True)
+    return kpgroup
 
 
 def get_password(kp, hostname, purpose):

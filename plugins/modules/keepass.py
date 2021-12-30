@@ -182,7 +182,7 @@ def main():
     module_args = dict(
         database=dict(type='str', required=True),
         hostname=dict(type='str', required=False),
-        keyfile=dict(type='str', required=False, default=None),
+        keyfile=dict(type='str', required=False, default=None, no_log=False),
         password=dict(type='str', required=False, default=None, no_log=True),
         password_length=dict(type='int', required=False, default=30, no_log=False),
         purpose=dict(type='str', required=True),

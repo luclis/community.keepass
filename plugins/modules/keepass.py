@@ -22,8 +22,8 @@ module: keepass
 short_description: This a module to interact with a keepass (kdbx) database.
 
 author:
-    - Navid Sassan (@navid.sassan)
-    - Markus Frei (@Markus.Frei)
+    - Navid Sassan (@navidsassan)
+    - Markus Frei (@MarkusFrei)
     - Qu1c0 (@Qu1c0)
     - Lucas FILIPPI (@Luclis)
 

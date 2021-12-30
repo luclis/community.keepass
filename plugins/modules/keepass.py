@@ -197,12 +197,12 @@ def main():
 
     try:
         kp = PyKeePass(database, password=password, keyfile=keyfile)
-    except IOError:
-        KEEPASS_OPEN_ERR = traceback.format_exc()
-        module.fail_json(msg='Could not open the database or keyfile.')
     except FileNotFoundError:
         KEEPASS_OPEN_ERR = traceback.format_exc()
         module.fail_json(msg='Could not find the database or keyfile.')
+    except IOError:
+        KEEPASS_OPEN_ERR = traceback.format_exc()
+        module.fail_json(msg='Could not open the database or keyfile.')
     except pykeepass.exceptions.CredentialsError:
         KEEPASS_OPEN_ERR = traceback.format_exc()
         module.fail_json(msg='Could not open the database, as the credentials are wrong.')

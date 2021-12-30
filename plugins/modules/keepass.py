@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 #
-# Author:  Linuxfabrik GmbH, Zurich, Switzerland
-# Contact: info (at) linuxfabrik (dot) ch
-#          https://www.linuxfabrik.ch/
+# Copyright: (c) 2021-2021, FILIPPI Lucas <lucas.filippi@luclis.fr>
+# GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
+# Copyright: (c) 2020-2021, Linuxfabrik GmbH <info@linuxfabrik.ch>
 # License: The Unlicense, see LICENSE file.
 
 # Make coding more python3-ish

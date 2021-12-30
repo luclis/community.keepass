@@ -38,6 +38,11 @@ module: keepass
 short_description: This a module to interact with a keepass (kdbx) database.
 
 version_added: "2.7"
+author:
+    - Navid Sassan (@navid.sassan)
+    - Markus Frei (@Markus.Frei)
+    - Qu1c0 (@Qu1c0)
+    - Lucas FILIPPI (@Luclis)
 
 description:
     - "This a module to interact with a keepass (kdbx) database."
@@ -88,8 +93,6 @@ options:
         required: false
         type: int
 
-author:
-    - Linuxfabrik GmbH, Zurich, Switzerland, https://www.linuxfabrik.ch
 '''
 
 EXAMPLES = '''

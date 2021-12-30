@@ -224,7 +224,7 @@ def main():
     if not module.check_mode:
         try:
             set_password(kp, hostname, group, username, purpose, password, notes, icon)
-        except:
+        except Exception:
             KEEPASS_SAVE_ERR = traceback.format_exc()
             module.fail_json(msg='Could not add the entry or save the database.', exception=KEEPASS_SAVE_ERR)
 

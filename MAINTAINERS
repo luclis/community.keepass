@@ -1,0 +1,6 @@
+This project is fork from Linuxfabrik. The original projet is here : https://git.linuxfabrik.ch/linuxfabrik/ansible-module-keepass
+He was maintained by :
+Navid Sassan and Markus Frei.
+For this fork, the maintainers are :
+Qu1c0 (@Qu1c0) for the pythons part
+Lucas FILIPPI (@Luclis) for the ansible part.

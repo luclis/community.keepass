@@ -19,6 +19,7 @@ on:
 env:
   NAMESPACE: community
   COLLECTION_NAME: keepass
+  CODECOV_TOKEN: 'b7a71841-ccb1-47b7-bbdc-ea0318bf67d2'
 
 jobs:
 
